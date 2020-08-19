@@ -23,7 +23,6 @@
 
 import Window from './components/Window.vue'
 import Mailbox from './components/Mailbox.vue'
-
 export default {
   data () {
     return {
@@ -56,67 +55,5 @@ export default {
 </script>
 
 <style lang="scss">
-html { height: 100%; }
-body { height: 80%; display: flex; }
-body > div { flex: 1; }
-
-.roof {
-  width: 0;
-  height: 0;
-  border-left: 250px solid transparent;
-  border-right: 250px solid transparent;
-  border-bottom: 225px solid #DD7E6B;
-}
-
-.sun {
-  margin: 30px 10px;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: #FFFF00;
-}
-
-.name {
-  position: absolute;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.6rem;
-  margin-bottom: 0;
-  text-align: center;
-  padding: 15px;
-  background-color: #93C47D;
-  color: #365E22;
-  border: 4px solid #6FA650;
-  font-weight: 400;
-  transform: translateY(-50%);
-}
-
-.house {
-  position: relative;
-  background-color: #CCCCCC;
-  width: 500px;
-  height: 300px;
-
-  .door {
-    height: 225px;
-    width: 150px;
-    background-color: #F6B26B;
-
-    &__knob {
-      margin-top: 20px;
-      margin-left: 10px;
-      width: 40px;
-      height: 8px;
-      background-color: #B46007;
-    }
-  }
-}
-
-.night-mode {
-  background-color: black;
-  .sun {
-    //border-radius: 50%;
-    box-shadow: inset -13px 0px white, inset -30px 0px 1px 1px white;
-    background-color: black;
-  }
-}
+@import "./scss/components/_home.scss";
 </style>

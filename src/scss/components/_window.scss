@@ -1,0 +1,14 @@
+.window {
+  margin: 3rem 1rem;
+  border: .4rem solid #A0C5E7;
+  background-color: #CFE2F3;
+  height: 10rem;
+  border-radius:50%;
+  width: 10rem;
+
+  &-cookie {
+    background-image: url("./../assets/cookie.png"); // get the image from mailbox path and not this file's path
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

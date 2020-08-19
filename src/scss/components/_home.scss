@@ -1,0 +1,59 @@
+.sun {
+  margin: 0 3rem 3rem 0;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: #FFFF00;
+}
+
+.roof {
+  width: 0;
+  height: 0;
+  border-left: 25rem solid transparent;
+  border-right: 25rem solid transparent;
+  border-bottom: 22.5rem solid #DD7E6B;
+}
+
+.name {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #93C47D;
+  color: #365E22;
+  border: .4rem solid #6FA650;
+  font-weight: 400;
+  transform: translateY(-50%);
+}
+
+.house {
+  position: relative;
+  background-color: #CCCCCC;
+  width: 50rem;
+  height: 30rem;
+
+  .door {
+    height: 22.5rem;
+    width: 15rem;
+    background-color: #F6B26B;
+
+    &__knob {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      width: 4rem;
+      height: .8rem;
+      background-color: #B46007;
+    }
+  }
+}
+
+.night-mode {
+  background-color: black;
+  .sun {
+    //border-radius: 50%;
+    box-shadow: inset -1.3rem 0 white, inset -3rem 0 .1rem .1rem white;
+    background-color: black;
+  }
+}

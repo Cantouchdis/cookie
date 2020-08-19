@@ -1,0 +1,31 @@
+.mailbox {
+  height: 7rem;
+  width: 10rem;
+  background-color: #999999;
+
+  &__slot {
+    margin-top: 1rem;
+    width: 7.5rem;
+    height: 1.5rem;
+    background-color: #666666;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    color: #666666;
+  }
+
+  &-drop {
+    animation: move-down .3s ease-in forwards;
+  }
+}
+
+@keyframes move-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
